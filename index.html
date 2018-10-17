@@ -1,0 +1,53 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<h1>Digital Crafts Grocery List</h1>
+
+<div>
+<h3>Select a store</h3>
+  <p>
+    <select id="dropDown">
+      <option value="selectStore" selected="selected">Select a Store</option>
+      <option value="Walmart">Walmart</option>
+      <option value="fiesta">Fiesta</option>
+      <option value="heb">HEB</option>
+      <option value="kroger">Kroger</option>
+      <option value="centralmarket">Central Market</option>
+    <select>
+    <!-- <button id="addStoreButton">Add Store</button> -->
+  </p>
+</div>
+
+<div>
+  <h3>Add Grocery Items</h3><button id="addNewItem">Add New Item</button>
+  <ol id='addGroceryItem'>
+  </ol>
+</div>
+<button id="addListButton">Add Grocery List</button>
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-database.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBGgJrQ6_W5SNVS2oUugqMW2VaPBLQ07rE",
+    authDomain: "grocery-app-67384.firebaseapp.com",
+    databaseURL: "https://grocery-app-67384.firebaseio.com",
+    projectId: "grocery-app-67384",
+    storageBucket: "",
+    messagingSenderId: "932925479642"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</html>
